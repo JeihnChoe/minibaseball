@@ -1,14 +1,16 @@
 package modelDTO.team;
 
 import lombok.Builder;
+import lombok.ToString;
 
-public class TeamModel {
+@ToString
+public class Team {
     private final int teamId;
     private final String teamName;
     private final String teamCreatedAt;
 
     @Builder
-    public TeamModel(int teamId, String teamName, String teamCreatedAt) {
+    public Team(int teamId, String teamName, String teamCreatedAt) {
         this.teamId = teamId;
         this.teamName = teamName;
         this.teamCreatedAt = teamCreatedAt;

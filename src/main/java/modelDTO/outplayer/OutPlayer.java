@@ -1,13 +1,16 @@
 package modelDTO.outplayer;
 
-public class OutPlayerModel {
+import lombok.ToString;
+
+@ToString
+public class OutPlayer {
 
     private final int outPlayerId;
     private final String outPlayerName;
     private final String outPlayerPosition;
     private final String outPlayerCreatedAt;
 
-    public OutPlayerModel(int outPlayerId, String outPlayerName, String outPlayerPosition, String outPlayerCreatedAt) {
+    public OutPlayer(int outPlayerId, String outPlayerName, String outPlayerPosition, String outPlayerCreatedAt) {
         this.outPlayerId = outPlayerId;
         this.outPlayerName = outPlayerName;
         this.outPlayerPosition = outPlayerPosition;
